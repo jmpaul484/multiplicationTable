@@ -52,14 +52,15 @@ namespace multiplicationTable
                     isValid = false;
                 }
             }
-
+            Console.Clear();
+            Console.WriteLine($" Your requested multiplication Table {number1} x {number2}");
             for (int i = 1; i <= number1; i++)
             {
                 for (int j = 1; j <= number2; j++)
                 {
                     result = i * j;
                     output = $"{result} |";
-                    output = output.PadLeft(5);
+                    output = output.PadLeft(6);
                     Console.Write(output);
                 }
                 Console.WriteLine();
